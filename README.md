@@ -2,6 +2,7 @@
 This file as well was created without creating a repo online on github
 
 ## 1. Steps local:
+- Do not worry if you have multiple commmits already(Skip Step 1)
 - Create project directory folder
 - Create files/folders/anything inside it
 - Now this folder is still not a git repo(that tracks changes)
@@ -25,3 +26,17 @@ This file as well was created without creating a repo online on github
 - So first create a new repo on Github(I named it `local-folder-to-github` same as my local folder name)
 - Didn't selected the option to create a readme as I alreadt created one here
 - Time to connect this local folder to online repo
+- Copy repo url from github(in my case: `https://github.com/abhi5658/local-folder-to-github.git`)
+- Now got to cli and add remote to this local repo:
+    - Git command: `git remote add origin repo_url` (e.g. `git remote add origin https://github.com/abhi5658/local-folder-to-github.git`)
+- Check if this is connected now git command: `git remote -v`
+    - shows the fetch and push remote urls
+- You can try pushing the local commits but that would fail as first you need to pull remote commits
+- Time to pull the remote commits to local repo:
+    - Git commmand: `git pull origin master`
+    - produces error: 'fatal: refusing to merge unrelated histories'
+    - By pass this error by git command: `git pull origin master --allow-unrelated-histories`
+    - This would merge the local commits with the pulled commits(initial commit)
+- Push local commits to remote repo:
+    - Git command: `git push origin master`
+- Now the local commits and whole local folder(repo) is pushed to online(remote) repo.
