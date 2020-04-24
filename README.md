@@ -2,7 +2,7 @@
 This file as well was created without creating a repo online on github
 
 ## 1. Steps local:
-- Do not worry if you have multiple commmits already(Skip Step 1)
+- Do not worry if you have multiple local commmits already(Skip Step 1)
 - Create project directory folder
 - Create files/folders/anything inside it
 - Now this folder is still not a git repo(that tracks changes)
@@ -39,4 +39,4 @@ This file as well was created without creating a repo online on github
     - This would merge the local commits with the pulled commits(initial commit)
 - Push local commits to remote repo:
     - Git command: `git push origin master`
-- Now the local commits and whole local folder(repo) is pushed to online(remote) repo.
+- Now the local commits and whole local folder(also a git repository) is pushed to online(remote) repository.
