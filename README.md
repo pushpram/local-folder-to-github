@@ -2,7 +2,7 @@
 This file as well was created without creating a repo online on github
 
 ## Steps:
-- Create preoject directory folder
+- Create project directory folder
 - Create files/folders/anything inside it
 - Now this folder is still not a git repo(that tracks changes)
 - Open git bash to the parent directory(as per basics)
@@ -18,3 +18,4 @@ This file as well was created without creating a repo online on github
 - Check status of tracked files command: `git status`
 - Add files to track. Easiest command: `git add --all`
 - Now time to commit this much
+- Commit command: `git commit -m "first local commit"`
