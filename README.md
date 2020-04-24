@@ -1,7 +1,7 @@
 # README #
 This file as well was created without creating a repo online on github
 
-## Steps:
+## 1. Steps local:
 - Create project directory folder
 - Create files/folders/anything inside it
 - Now this folder is still not a git repo(that tracks changes)
@@ -19,3 +19,9 @@ This file as well was created without creating a repo online on github
 - Add files to track. Easiest command: `git add --all`
 - Now time to commit this much
 - Commit command: `git commit -m "first local commit"`
+
+## 2. Steps Github(or any git tool):
+- Github does not have option to create a new repo from cli before installing some kind of other tool (as per last I know)
+- So first create a new repo on Github(I named it `local-folder-to-github` same as my local folder name)
+- Didn't selected the option to create a readme as I alreadt created one here
+- Time to connect this local folder to online repo
