@@ -2,7 +2,7 @@
 This file as well was created without creating a repo online on github
 
 ## 1. Steps local:
-- Do not worry if you have multiple local commmits already(Skip Step 1)
+- Do not worry if you have multiple local commits already(Skip Step 1)
 - Create project directory folder
 - Create files/folders/anything inside it
 - Now this folder is still not a git repo(that tracks changes)
@@ -15,21 +15,27 @@ This file as well was created without creating a repo online on github
     - If not set name and email using using git command: 
         - `git config user.name "Your name"`
         - `git config user.email "emailid@thatcompany.com"`
-    - Check again if the new credentials(if different) appears at end of list commmand: `git config -l`
+    - Check again if the new credentials(if different) appears at end of list command: `git config -l`
 - Check status of tracked files command: `git status`
 - Add files to track. Easiest command: `git add --all`
 - Now time to commit this much
 - Commit command: `git commit -m "first local commit"`
+- Do more commits if needed
 
-## 2. Steps Github(or any git tool):
+## 2. Steps Github(or any git online tool):
 - Github does not have option to create a new repo from cli before installing some kind of other tool (as per last I know)
 - So first create a new repo on Github(I named it `local-folder-to-github` same as my local folder name)
 - Didn't selected the option to create a readme as I alreadt created one here
 - Time to connect this local folder to online repo
 - Copy repo url from github(in my case: `https://github.com/abhi5658/local-folder-to-github.git`)
 - Now got to cli and add remote to this local repo:
-    - Git command: `git remote add origin repo_url` (e.g. `git remote add origin https://github.com/abhi5658/local-folder-to-github.git`)
-- Check if this is connected now git command: `git remote -v`
+    - Git command: `git remote add origin <repo_url>` (e.g. `git remote add origin https://github.com/abhi5658/local-folder-to-github.git`)
+        - This will let the local repository know that there is a reomte repo to which it has to push changes
+        - This statement sets `origin` alias to remote repo url
+    - There's another way to directly push the changes with the repo url directly:
+        - Git command: `git push <repo_url>` (e.g. `git push https://github.com/abhi5658/local-folder-to-github.git`)
+        - This will be succesful if there's zero commits on the remote repo
+- Check if this is connected now, git command: `git remote -v`
     - shows the fetch and push remote urls
 - You can try pushing the local commits but that would fail as first you need to pull remote commits
 - Time to pull the remote commits to local repo:
@@ -40,3 +46,5 @@ This file as well was created without creating a repo online on github
 - Push local commits to remote repo:
     - Git command: `git push origin master`
 - Now the local commits and whole local folder(also a git repository) is pushed to online(remote) repository.
+
+### Video depicting similar steps: https://youtu.be/fQLK8Ib_SKk?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&t=324
