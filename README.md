@@ -33,6 +33,7 @@ This file as well was created without creating a repo online on github
         - This will let the local repository know that there is a reomte repo to which it has to push changes
         - This statement sets `origin` alias to remote repo url
     - There's another way to directly push the changes with the repo url directly:
+        - Git command: `git push --set-upstream origin master` to push the local changes to master branch on your online git repo. OR other way:
         - Git command: `git push <repo_url>` (e.g. `git push https://github.com/abhi5658/local-folder-to-github.git`)
         - This will be succesful if there's zero commits on the remote repo
         - If any issue, related to error of unrelated history due to commits present on remote, follow next steps
